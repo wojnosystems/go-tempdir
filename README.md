@@ -10,7 +10,7 @@ Library to create temporary directories, treat them like objects and call Close 
 ```go
 // Basic imports
 import (
-    "github.com/wojnosystems/tempdir"
+    go-tempdir
 )
 
 func main() {

@@ -1,1 +1,1 @@
-module github.com/wojnosystems/tempdir
+module github.com/wojnosystems/go-tempdir

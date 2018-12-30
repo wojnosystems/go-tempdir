@@ -1,4 +1,4 @@
-package go_tempdir
+package tempdir
 
 import (
 	"errors"

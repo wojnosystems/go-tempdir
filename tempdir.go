@@ -10,7 +10,7 @@ See LICENSE file for the full license
 */
 
 /*
-go-tempdir
+tempdir
 
 Creates a temporary directory using ioutil.TempDir, but also provides a callback (Close() and MustClose()) to clean itself up.
 I found this pattern showing up repeatedly in multiple projects and got tired of writing the code and test for this.
@@ -18,14 +18,14 @@ I found this pattern showing up repeatedly in multiple projects and got tired of
 @author Chris Wojno
 @copyright
 */
-package go_tempdir
+package tempdir
 
 import (
 	"io/ioutil"
 	"os"
 )
 
-// AutoClosing go-tempdir provides the mechanism for cleaning up after creating the temporary directory
+// AutoClosing tempdir provides the mechanism for cleaning up after creating the temporary directory
 //
 // @implements Closer with Close()error
 //

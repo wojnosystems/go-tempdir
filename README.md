@@ -18,13 +18,13 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	defer dir.MustClose()
+	defer dir1.MustClose()
 	
 	dir2, err := tempdir.TempDir("/tmp/thing", "prefix")
 	if err != nil {
 		panic(err)
 	}
-	err = dir.Close()
+	err = dir2.Close()
 	if err != nil {
 		panic("Unable to delete the files")
 	}
